@@ -20,7 +20,7 @@ button {
     cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6, a, button {
+h1, h2, h3, h4, h5, h6, a, li, button {
     font-family: "Aboreto-Regular";
     font-size: 4vh;
     font-weight: bold;
@@ -93,6 +93,7 @@ body {
     height: 40vh;
     display: flex;
     align-items: center;
+    
 }
 
 #first_block {
@@ -102,17 +103,32 @@ body {
 
 #second_block {
     width: 39%;
-    background-color: rgb(255,175,63);
+    background-image: url(../img/bg-photo.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#second_block:hover {
+    background-size: 120% 120%;
 }
 
 #third_block {
     width: 49%;
     background-color: rgb(103,96,221);
+    justify-content: center;
+    align-items: flex-end;
 }
 
 #four_block {
     width: 49%;
     background-color: rgb(18,18,18);
+    color: white;
 }
 
 #five_block {
@@ -121,6 +137,39 @@ body {
     align-items: center;
     justify-content: center;
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(240,217,255,1) 52%, rgba(220,252,255,1) 100%);
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.content-blocks-item-btn-project {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: .4vw;
+    width: 6vw;
+    height: 2vw;
+    font-size: 1vw;
+    padding-right: 5px;
+    padding-left: 5px;
+    transition: all .5s ease-out;
+}
+
+.content-blocks-item-btn-project:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.content-blocks-item-href-project {
+    float: center;
+}
+
+.content-blocks-item-title-project {
+    color: white;
+    font-weight: bold;
+    font-size: 5vh;
 }
 
 .content-blocks-item-title {
@@ -182,4 +231,32 @@ body {
 .content-blocks-item-stack-item-2 {
     margin-left: 0px;
     margin-top: 10px;
+}
+
+.content-blocks-item-content {
+    margin-left: 20px;
+}
+
+.content-blocks-item-content-list-item {
+    margin-top: 5px;
+    font-size: 1.6vh;
+}
+
+.content-blocks-item-content-btn {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: .4vw;
+    width: 6vw;
+    height: 2vw;
+    font-size: 1vw;
+    padding-right: 5px;
+    padding-left: 5px;
+    transition: all .5s ease-out;
+}
+
+.content-blocks-item-content-btn:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
 }
