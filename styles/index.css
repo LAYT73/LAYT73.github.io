@@ -16,7 +16,11 @@ a:hover {
     color: rgb(191, 157, 78);
 }
 
-h1, h2, h3, h4, h5, h6, a {
+button {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, a, button {
     font-family: "Aboreto-Regular";
     font-size: 4vh;
     font-weight: bold;
@@ -52,7 +56,7 @@ body {
 .content-header-left-circle {
     width: 3vh;
     height: 3vh;
-    background-color: rgb(191, 157, 78);
+    background-color: rgb(255,175,63);
     border-radius: 50%;
 }
 
@@ -87,6 +91,8 @@ body {
     padding-left: 10px;
     border-radius: 2vw;
     height: 40vh;
+    display: flex;
+    align-items: center;
 }
 
 #first_block {
@@ -101,18 +107,79 @@ body {
 
 #third_block {
     width: 49%;
-    background: linear-gradient(90deg, rgba(67,0,112,1) 0%, rgba(18,18,18,1) 100%);}
+    background-color: rgb(103,96,221);
+}
 
 #four_block {
     width: 49%;
     background-color: rgb(18,18,18);
 }
 
+#five_block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(240,217,255,1) 52%, rgba(220,252,255,1) 100%);
+}
+
 .content-blocks-item-title {
-    margin-top: 30px;
     margin-left: 30px;
     font-size: 3.5vh;
     width: 70%;
     font-style: italic;
     font-weight: 300;
+}
+
+.content-blocks-item-paragraph {
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 80%;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.4vh;
+    margin-bottom: auto;
+}
+
+.content-blocks-item-href {
+    margin-left: 30px;
+}
+
+.content-blocks-item-btn-github {
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid black;
+    border-radius: .4vw;
+    width: 6vw;
+    height: 2vw;
+    font-size: 1vw;
+    padding-right: 5px;
+    padding-left: 5px;
+    transition: all .5s ease-out;
+}
+
+.content-blocks-item-btn-github:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+}
+
+.content-blocks-item-title-2 {
+    text-align: center;
+    font-size: 3vh;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.content-blocks-item-stack-item {
+    margin-left: 30px;
+}
+
+.content-blocks-item-stack-item-2 {
+    margin-left: 0px;
+    margin-top: 10px;
 }
