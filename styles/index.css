@@ -1,0 +1,23 @@
+@font-face {
+font-family: "Aboreto-Regular"; 
+src: url("../fonts/Aboreto-Regular.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+
+h1 {
+    font-family: "Aboreto-Regular";
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+
+
+.container {
+    width: 100vw;
+    padding: 0 10vw;
+    justify-content: center;
+}
